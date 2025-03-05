@@ -16,11 +16,11 @@ export const Pricing = () => {
             <ul className="space-y-4 mb-8">
               <li className="flex items-center">
                 <MonitorPlay className="h-5 w-5 text-blue-600 mr-2" />
-                <span>平台广告服务 (预算1000+)</span>
+                <span>平台广告服务 (预算 ¥1000+)</span>
               </li>
               <li className="flex items-center">
                 <Globe className="h-5 w-5 text-blue-600 mr-2" />
-                <span>网站服务 (800～1000元/年)</span>
+                <span>网站服务 (¥800～1000/年)</span>
               </li>
               <li className="flex items-center">
                 <MonitorPlay className="h-5 w-5 text-blue-600 mr-2" />
@@ -45,11 +45,11 @@ export const Pricing = () => {
             <ul className="space-y-4 mb-8">
               <li className="flex items-center">
                 <MonitorPlay className="h-5 w-5 text-white mr-2" />
-                <span>平台广告服务 (预算 5000+)</span>
+                <span>平台广告服务 (预算 ¥5000+)</span>
               </li>
               <li className="flex items-center">
                 <Globe className="h-5 w-5 text-white mr-2" />
-                <span>网站服务 (含优化 5000 元/年)</span>
+                <span>网站服务 (含优化 ¥5000/年)</span>
               </li>
               <li className="flex items-center">
                 <MonitorPlay className="h-5 w-5 text-white mr-2" />
