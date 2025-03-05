@@ -19,7 +19,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Building2 className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold text-gray-800">AdPro</span>
+              <span className="text-2xl font-bold text-gray-800">嘿嗨</span>
             </div>
             <div className="flex items-center space-x-4">
               <a href="#services" className="text-gray-600 hover:text-blue-600">
@@ -104,7 +104,9 @@ function App() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 bg-gray-50 rounded-lg">
                     <p className="font-semibold text-gray-700">预计月度覆盖</p>
-                    <p className="text-xl font-bold text-gray-900">26.4K - 76K</p>
+                    <p className="text-xl font-bold text-gray-900">
+                      26.4K - 76K
+                    </p>
                     <p className="text-sm text-gray-600">每日 6.6K - 19K</p>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
@@ -114,7 +116,9 @@ function App() {
                   </div>
                 </div>
                 <div className="p-4 bg-gray-50 rounded-lg">
-                  <p className="font-semibold text-gray-700">月度支出 (每周1天)</p>
+                  <p className="font-semibold text-gray-700">
+                    月度支出 (每周1天)
+                  </p>
                   <p className="text-xl font-bold text-gray-900">¥576/月</p>
                   <p className="text-sm text-gray-600">每月4日投放</p>
                 </div>
@@ -145,7 +149,9 @@ function App() {
                   </div>
                 </div>
                 <div className="p-4 bg-blue-500 rounded-lg">
-                  <p className="font-semibold text-blue-100">月度支出 (每日投放)</p>
+                  <p className="font-semibold text-blue-100">
+                    月度支出 (每日投放)
+                  </p>
                   <p className="text-xl font-bold">¥4,320/月</p>
                   <p className="text-sm text-blue-100">每月30日投放</p>
                 </div>
@@ -272,11 +278,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Building2 className="h-6 w-6" />
-            <span className="text-xl font-bold">AdPro</span>
-          </div>
-          <p className="text-gray-400"> 2024 AdPro. All rights reserved.</p>
+          <p className="text-gray-400"> &copy;2025 嘿嗨广告传媒有限公司</p>
         </div>
       </footer>
     </div>
