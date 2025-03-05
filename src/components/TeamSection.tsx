@@ -3,7 +3,7 @@ import { TeamMember } from "../types";
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Richard Lin",
+    name: "Richard Ma",
     title: "AI 广告策略专家",
     description:
       "前 Meta AI 专家，拥有超过 10 年数字营销经验。专注于利用人工智能技术优化广告投放策略，帮助客户实现最佳广告效果。",

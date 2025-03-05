@@ -25,7 +25,8 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: "国际教育服务增长",
-    description: "为国际教育机构打造全方位数字营销方案，半年内实现留学咨询量提升143%",
+    description:
+      "为国际教育机构打造全方位数字营销方案，半年内实现留学咨询量提升143%",
     metrics: [
       "目标市场覆盖率提升200%",
       "咨询转化率提升85%",
@@ -34,7 +35,8 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: "宠物玩具电商增长案例",
-    description: "通过精准投放和内容营销策略，帮助宠物玩具品牌实现月销售额提升185%，获客成本降低40%",
+    description:
+      "通过精准投放和内容营销策略，帮助宠物玩具品牌实现月销售额提升185%，获客成本降低40%",
     metrics: [
       "社交媒体互动率提升220%",
       "电商转化率从2.3%提升至4.8%",
@@ -82,7 +84,12 @@ export const CaseStudies = () => {
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Line type="monotone" dataKey="sales" stroke="#2563eb" name="实际销量" />
+                  <Line
+                    type="monotone"
+                    dataKey="sales"
+                    stroke="#2563eb"
+                    name="实际销量"
+                  />
                   <Line
                     type="monotone"
                     dataKey="target"
@@ -116,8 +123,18 @@ export const CaseStudies = () => {
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Line type="monotone" dataKey="students" stroke="#2563eb" name="注册学生" />
-                  <Line type="monotone" dataKey="inquiries" stroke="#10b981" name="咨询量" />
+                  <Line
+                    type="monotone"
+                    dataKey="students"
+                    stroke="#2563eb"
+                    name="注册学生"
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="inquiries"
+                    stroke="#10b981"
+                    name="咨询量"
+                  />
                 </LineChart>
               </ResponsiveContainer>
             </div>
@@ -138,9 +155,14 @@ export const CaseStudies = () => {
               {caseStudies[2].stats && (
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   {caseStudies[2].stats.map((stat) => (
-                    <div key={stat.label} className="bg-white p-4 rounded-lg shadow-sm">
+                    <div
+                      key={stat.label}
+                      className="bg-white p-4 rounded-lg shadow-sm"
+                    >
                       <p className="text-sm text-gray-600">{stat.label}</p>
-                      <p className="text-2xl font-bold text-blue-600">{stat.value}</p>
+                      <p className="text-2xl font-bold text-blue-600">
+                        {stat.value}
+                      </p>
                       <p className="text-sm text-green-600">{stat.change}</p>
                     </div>
                   ))}
