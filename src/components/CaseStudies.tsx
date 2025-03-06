@@ -7,8 +7,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  AreaChart,
-  Area,
 } from "recharts";
 import { eBikeData, educationServiceData, petShopData } from "../data/mockData";
 import { CaseStudy } from "../types";
@@ -36,23 +34,33 @@ const caseStudies: CaseStudy[] = [
   {
     title: "宠物玩具电商增长案例",
     description:
-      "通过精准投放和内容营销策略，帮助宠物玩具品牌实现月销售额提升185%，获客成本降低40%",
+      "通过AI驱动的精准广告投放策略，帮助宠物玩具品牌在全球市场实现显著增长，获得卓越的营销效果",
     metrics: [
-      "社交媒体互动率提升220%",
-      "电商转化率从2.3%提升至4.8%",
-      "月度复购率提升60%",
-      "新客获取成本降低40%",
+      "总展示量达到1.27亿次",
+      "转化量突破13.5万",
+      "广告效果持续优化",
+      "品牌知名度显著提升",
     ],
     stats: [
       {
-        label: "月均销售额",
-        value: "¥286,000",
-        change: "↑ 185%",
+        label: "总展示量",
+        value: "127M",
+        change: "展示次数",
       },
       {
-        label: "获客成本",
-        value: "¥32",
-        change: "↓ 40%",
+        label: "转化量",
+        value: "135K",
+        change: "购买转化",
+      },
+      {
+        label: "平均点击成本",
+        value: "$9.97",
+        change: "CPC",
+      },
+      {
+        label: "总投放费用",
+        value: "$11.9M",
+        change: "营销投入",
       },
     ],
   },
@@ -163,7 +171,7 @@ export const CaseStudies = () => {
                       <p className="text-2xl font-bold text-blue-600">
                         {stat.value}
                       </p>
-                      <p className="text-sm text-green-600">{stat.change}</p>
+                      <p className="text-sm text-gray-500">{stat.change}</p>
                     </div>
                   ))}
                 </div>
@@ -171,37 +179,31 @@ export const CaseStudies = () => {
             </div>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={petShopData}>
+                <LineChart data={petShopData}>
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="week" />
+                  <XAxis dataKey="quarter" />
                   <YAxis />
                   <Tooltip />
                   <Legend />
-                  <Area
+                  <Line
                     type="monotone"
-                    dataKey="organic"
-                    stackId="1"
-                    stroke="#10b981"
-                    fill="#10b981"
-                    name="自然流量"
-                  />
-                  <Area
-                    type="monotone"
-                    dataKey="paid"
-                    stackId="1"
-                    stroke="#2563eb"
-                    fill="#2563eb"
-                    name="付费流量"
+                    dataKey="impressions"
+                    stroke="#f59e0b"
+                    name="展示量(M)"
                   />
                   <Line
                     type="monotone"
-                    dataKey="conversion"
-                    stroke="#f59e0b"
-                    strokeWidth={2}
-                    name="转化数(件)"
-                    dot={{ fill: "#f59e0b" }}
+                    dataKey="conversions"
+                    stroke="#2563eb"
+                    name="转化量(K)"
                   />
-                </AreaChart>
+                  <Line
+                    type="monotone"
+                    dataKey="cost"
+                    stroke="#10b981"
+                    name="费用(M$)"
+                  />
+                </LineChart>
               </ResponsiveContainer>
             </div>
           </div>

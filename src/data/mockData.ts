@@ -17,8 +17,15 @@ export const educationServiceData = [
 ];
 
 export const petShopData = [
-  { week: "第1周", organic: 2800, paid: 4200, conversion: 320 },
-  { week: "第2周", organic: 3500, paid: 5100, conversion: 428 },
-  { week: "第3周", organic: 4200, paid: 5800, conversion: 515 },
-  { week: "第4周", organic: 5100, paid: 6500, conversion: 642 },
+  { quarter: "Q1", impressions: 25, conversions: 20, cost: 2.1 },
+  { quarter: "Q2", impressions: 45, conversions: 35, cost: 4.3 },
+  { quarter: "Q3", impressions: 78, conversions: 65, cost: 7.8 },
+  { quarter: "Q4", impressions: 127, conversions: 135, cost: 11.9 }
 ];
+
+export const petMetrics = {
+  conversions: "135K",
+  impressions: "127M",
+  cpc: "$9.97",
+  totalCost: "$11.9M"
+};

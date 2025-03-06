@@ -1,24 +1,28 @@
-import { Building2, ChevronRight } from "lucide-react";
+import { Megaphone, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { companyInfo } from "../data/companyInfo";
 
 export const Header = () => {
   return (
-    <header className="bg-white">
-      <nav className="container mx-auto px-6 py-4">
+    <header className="bg-white shadow-sm">
+      <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <Building2 className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-800">嘿嗨</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <a href="#services" className="text-gray-600 hover:text-blue-600">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-2.5 rounded-xl shadow-lg">
+              <Megaphone className="h-9 w-9 text-white" strokeWidth={2.5} />
+            </div>
+            <span className="text-3xl font-extrabold text-gray-800 tracking-tight">{companyInfo.name}</span>
+          </Link>
+          <div className="flex items-center space-x-6">
+            <a href="#services" className="text-gray-600 hover:text-blue-600 font-medium">
               服务
             </a>
-            <a href="#pricing" className="text-gray-600 hover:text-blue-600">
+            <a href="#pricing" className="text-gray-600 hover:text-blue-600 font-medium">
               价格
             </a>
             <a
               href="#contact"
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              className="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 font-medium shadow-sm"
             >
               联系我们
             </a>

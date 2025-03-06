@@ -1,4 +1,5 @@
 import { MonitorPlay, Globe, Star } from "lucide-react";
+import { companyInfo } from "../data/companyInfo";
 
 export const Pricing = () => {
   return (
@@ -10,10 +11,11 @@ export const Pricing = () => {
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col h-full">
             <div className="flex-grow">
               <h3 className="text-2xl font-bold mb-4">初级套餐</h3>
-              <div className="flex items-baseline mb-8">
+              <div className="flex items-baseline mb-2">
                 <span className="text-4xl font-bold">¥999</span>
                 <span className="text-gray-500 ml-2">/月</span>
               </div>
+              <p className="text-sm text-green-600 mb-8">半年付95折，年付9折</p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-blue-600 mr-2" />
@@ -41,10 +43,11 @@ export const Pricing = () => {
           <div className="bg-blue-600 text-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col h-full">
             <div className="flex-grow">
               <h3 className="text-2xl font-bold mb-4">高级套餐</h3>
-              <div className="flex items-baseline mb-8">
+              <div className="flex items-baseline mb-2">
                 <span className="text-4xl font-bold">¥2999</span>
                 <span className="text-blue-200 ml-2">/月</span>
               </div>
+              <p className="text-sm text-blue-200 mb-8">半年付95折，年付9折</p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-white mr-2" />
@@ -75,11 +78,12 @@ export const Pricing = () => {
             </div>
             <div className="flex-grow">
               <h3 className="text-2xl font-bold mb-4">企业 VIP 定制</h3>
-              <div className="flex items-baseline mb-8">
+              <div className="flex items-baseline mb-2">
                 <span className="text-lg font-medium text-gray-300">
                   百万人民币起
                 </span>
               </div>
+              <p className="text-sm text-yellow-400 mb-8">半年付95折，年付9折</p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-yellow-400 mr-2" />
@@ -104,6 +108,38 @@ export const Pricing = () => {
             >
               预约 VIP 咨询
             </a>
+          </div>
+        </div>
+
+        {/* Terms of Service */}
+        <div className="mt-16 bg-gray-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold mb-6">服务条款摘要</h3>
+          <div className="space-y-4">
+            <div className="flex items-start">
+              <span className="text-gray-500 mr-2">1.</span>
+              <p className="text-gray-700">
+                客户需要自己开通相关社交媒体账户和购物车的收款账户
+              </p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-gray-500 mr-2">2.</span>
+              <p className="text-gray-700">
+                客户需要自己解决电商平台的支付问题（在资源允许的情况下，{companyInfo.name}
+                可以提供有限的支持）
+              </p>
+            </div>
+            <div className="flex items-start">
+              <span className="text-gray-500 mr-2">3.</span>
+              <p className="text-gray-700">{companyInfo.name} 拥有最终的条款解释权</p>
+            </div>
+            <div className="mt-6 text-center">
+              <a
+                href="/terms"
+                className="text-blue-600 hover:text-blue-800 inline-flex items-center gap-1 transition-colors"
+              >
+                查看完整服务条款 <span className="text-lg">→</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

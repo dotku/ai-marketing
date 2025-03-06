@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
       "资深商务发展专家，深谙国际销售策略。擅长制定跨境营销方案，帮助企业开拓国际市场，建立品牌影响力。",
     expertise: ["国际市场开发", "品牌策略", "跨境营销"],
     image: "/images/placeholder-female-asian.png",
-    color: "green",
+    color: "blue",
   },
 ];
 
