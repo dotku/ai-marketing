@@ -12,18 +12,18 @@ export const Pricing = () => {
             <div className="flex-grow">
               <h3 className="text-2xl font-bold mb-4">初级套餐</h3>
               <div className="flex items-baseline mb-2">
-                <span className="text-4xl font-bold">¥999</span>
+                <span className="text-4xl font-bold">¥3999</span>
                 <span className="text-gray-500 ml-2">/月</span>
               </div>
               <p className="text-sm text-green-600 mb-8">半年付95折，年付9折</p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-blue-600 mr-2" />
-                  <span>平台广告服务 (预算 ¥1000+)</span>
+                  <span>平台广告服务</span>
                 </li>
                 <li className="flex items-center">
                   <Globe className="h-5 w-5 text-blue-600 mr-2" />
-                  <span>网站服务 (¥800～1000/年)</span>
+                  <span>网站服务</span>
                 </li>
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-blue-600 mr-2" />
@@ -44,18 +44,18 @@ export const Pricing = () => {
             <div className="flex-grow">
               <h3 className="text-2xl font-bold mb-4">高级套餐</h3>
               <div className="flex items-baseline mb-2">
-                <span className="text-4xl font-bold">¥2999</span>
+                <span className="text-4xl font-bold">¥5999</span>
                 <span className="text-blue-200 ml-2">/月</span>
               </div>
               <p className="text-sm text-blue-200 mb-8">半年付95折，年付9折</p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-white mr-2" />
-                  <span>平台广告服务 (预算 ¥5000+)</span>
+                  <span>平台广告服务</span>
                 </li>
                 <li className="flex items-center">
                   <Globe className="h-5 w-5 text-white mr-2" />
-                  <span>网站服务 (含优化 ¥5000/年)</span>
+                  <span>网站服务</span>
                 </li>
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-white mr-2" />
@@ -83,7 +83,9 @@ export const Pricing = () => {
                   百万人民币起
                 </span>
               </div>
-              <p className="text-sm text-yellow-400 mb-8">半年付95折，年付9折</p>
+              <p className="text-sm text-yellow-400 mb-8">
+                半年付95折，年付9折
+              </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <MonitorPlay className="h-5 w-5 text-yellow-400 mr-2" />
@@ -124,13 +126,16 @@ export const Pricing = () => {
             <div className="flex items-start">
               <span className="text-gray-500 mr-2">2.</span>
               <p className="text-gray-700">
-                客户需要自己解决电商平台的支付问题（在资源允许的情况下，{companyInfo.name}
+                客户需要自己解决电商平台的支付问题（在资源允许的情况下，
+                {companyInfo.name}
                 可以提供有限的支持）
               </p>
             </div>
             <div className="flex items-start">
               <span className="text-gray-500 mr-2">3.</span>
-              <p className="text-gray-700">{companyInfo.name} 拥有最终的条款解释权</p>
+              <p className="text-gray-700">
+                {companyInfo.name} 拥有最终的条款解释权
+              </p>
             </div>
             <div className="mt-6 text-center">
               <a
