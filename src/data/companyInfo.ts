@@ -10,8 +10,8 @@ export const companyInfo = {
     full: "深圳市南山区科技园南区高新南七道",
   },
   contact: {
-    phone: "0755-8888-8888",
-    email: "info@jytech.us",
+    phone: "17318011997",
+    email: "carrie_lan198@163.com",
   },
   description: `${LEGAL_NAME}是一家专注于AI驱动的数字营销解决方案提供商，致力于帮助企业实现数字化转型！`,
 };
