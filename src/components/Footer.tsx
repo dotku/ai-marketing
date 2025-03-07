@@ -6,14 +6,7 @@ export const Footer = () => {
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-2">
-            <h3 className="text-xl font-bold text-white mb-4">{companyInfo.name}</h3>
-            <p className="mb-4">{companyInfo.description}</p>
-            <p className="text-sm">
-              {new Date().getFullYear()} {companyInfo.legalName}
-            </p>
-          </div>
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-lg font-semibold text-white mb-4">案例展示</h4>
             <ul className="space-y-2">
               <li>
@@ -38,7 +31,7 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-lg font-semibold text-white mb-4">联系我们</h4>
             <ul className="space-y-2">
               <li>地址：{companyInfo.address.full}</li>
@@ -53,6 +46,15 @@ export const Footer = () => {
                 隐私政策
               </Link>
             </div>
+          </div>
+          <div className="col-span-2">
+            <h3 className="text-xl font-bold text-white mb-4">
+              {companyInfo.name}
+            </h3>
+            <p className="mb-4">{companyInfo.description}</p>
+            <p className="text-sm">
+              &copy;{new Date().getFullYear()} {companyInfo.legalName}
+            </p>
           </div>
         </div>
       </div>
