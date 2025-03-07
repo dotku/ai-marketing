@@ -54,7 +54,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         label: "平均点击成本",
-        value: "$9.97",
+        value: "$3.97",
         change: "CPC",
       },
       {
@@ -96,7 +96,7 @@ export const CaseStudies = () => {
                     type="monotone"
                     dataKey="sales"
                     stroke="#2563eb"
-                    name="实际销量"
+                    name="实际销量（万元）"
                   />
                   <Line
                     type="monotone"

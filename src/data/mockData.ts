@@ -20,12 +20,12 @@ export const petShopData = [
   { quarter: "Q1", impressions: 25, conversions: 20, cost: 2.1 },
   { quarter: "Q2", impressions: 45, conversions: 35, cost: 4.3 },
   { quarter: "Q3", impressions: 78, conversions: 65, cost: 7.8 },
-  { quarter: "Q4", impressions: 127, conversions: 135, cost: 11.9 }
+  { quarter: "Q4", impressions: 127, conversions: 135, cost: 11.9 },
 ];
 
 export const petMetrics = {
   conversions: "135K",
   impressions: "127M",
   cpc: "$9.97",
-  totalCost: "$11.9M"
+  totalCost: "$11.9M",
 };
