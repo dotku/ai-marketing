@@ -7,6 +7,22 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
+            <h4 className="text-lg font-semibold text-white mb-4">联系我们</h4>
+            <ul className="space-y-2">
+              <li>地址：{companyInfo.address.full}</li>
+              <li>电话：{companyInfo.contact.phone}</li>
+              <li>邮箱：{companyInfo.contact.email}</li>
+            </ul>
+            <div className="mt-6 space-y-2">
+              <Link to="/terms" className="block hover:text-white">
+                服务条款
+              </Link>
+              <Link to="/privacy" className="block hover:text-white">
+                隐私政策
+              </Link>
+            </div>
+          </div>
+          <div className="col-span-2 md:col-span-1">
             <h4 className="text-lg font-semibold text-white mb-4">案例展示</h4>
             <ul className="space-y-2">
               <li>
@@ -30,22 +46,6 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="col-span-2 md:col-span-1">
-            <h4 className="text-lg font-semibold text-white mb-4">联系我们</h4>
-            <ul className="space-y-2">
-              <li>地址：{companyInfo.address.full}</li>
-              <li>电话：{companyInfo.contact.phone}</li>
-              <li>邮箱：{companyInfo.contact.email}</li>
-            </ul>
-            <div className="mt-6 space-y-2">
-              <Link to="/terms" className="block hover:text-white">
-                服务条款
-              </Link>
-              <Link to="/privacy" className="block hover:text-white">
-                隐私政策
-              </Link>
-            </div>
           </div>
           <div className="col-span-2">
             <h3 className="text-xl font-bold text-white mb-4">
