@@ -10,6 +10,7 @@ import { Terms } from "./components/Terms";
 import { Privacy } from "./components/Privacy";
 import { Footer } from "./components/Footer";
 import { CookieConsent } from "./components/CookieConsent";
+import { Reports } from "./pages/Reports";
 import { MessageSquareMore } from "lucide-react";
 
 function HomePage() {
@@ -50,6 +51,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/reports" element={<Reports />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
           </Routes>

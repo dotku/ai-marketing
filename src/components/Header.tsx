@@ -51,6 +51,12 @@ export const Header = () => {
             >
               服务
             </a>
+            <Link
+              to="/reports"
+              className="text-gray-600 hover:text-blue-600 font-medium"
+            >
+              行业报告
+            </Link>
             <a
               href="#pricing"
               className="text-gray-600 hover:text-blue-600 font-medium"
@@ -90,6 +96,13 @@ export const Header = () => {
             >
               服务
             </a>
+            <Link
+              to="/reports"
+              className="block text-gray-600 hover:text-blue-600 font-medium py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              行业报告
+            </Link>
             <a
               href="#pricing"
               className="block text-gray-600 hover:text-blue-600 font-medium py-2"
