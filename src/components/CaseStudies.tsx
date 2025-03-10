@@ -8,7 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { eBikeData, educationServiceData, petShopData } from "../data/mockData";
+import { eBikeData, gameEnterpriseData, petShopData } from "../data/mockData";
 import { CaseStudy } from "../types";
 
 const caseStudies: CaseStudy[] = [
@@ -22,13 +22,13 @@ const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    title: "国际教育服务增长",
+    title: "Stray 猫咪历险记",
     description:
-      "为国际教育机构打造全方位数字营销方案，半年内实现留学咨询量提升143%",
+      "为Stray在易游戏平台提供全方位营销解决方案，半年内实现活跃玩家增长40倍，成为平台最受欢迎的独立游戏",
     metrics: [
-      "目标市场覆盖率提升200%",
-      "咨询转化率提升85%",
-      "平均响应时间缩短60%",
+      "月活跃玩家突破2000万",
+      "玩家月均消费3500万",
+      "社交媒体讨论量提升85%",
     ],
   },
   {
@@ -111,7 +111,7 @@ export const CaseStudies = () => {
           </div>
         </div>
 
-        {/* Education Service Case */}
+        {/* Gaming Enterprise Case */}
         <div className="mb-16 bg-gray-50 rounded-2xl p-8">
           <h3 className="text-2xl font-bold mb-6">{caseStudies[1].title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -125,7 +125,7 @@ export const CaseStudies = () => {
             </div>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={educationServiceData}>
+                <LineChart data={gameEnterpriseData}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="month" />
                   <YAxis />
@@ -133,15 +133,15 @@ export const CaseStudies = () => {
                   <Legend />
                   <Line
                     type="monotone"
-                    dataKey="students"
+                    dataKey="players"
                     stroke="#2563eb"
-                    name="注册学生"
+                    name="活跃玩家(万)"
                   />
                   <Line
                     type="monotone"
-                    dataKey="inquiries"
+                    dataKey="spend"
                     stroke="#10b981"
-                    name="咨询量"
+                    name="月消费额(万)"
                   />
                 </LineChart>
               </ResponsiveContainer>

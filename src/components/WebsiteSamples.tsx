@@ -1,7 +1,7 @@
 import { TrendingUp, Users, ShoppingCart } from "lucide-react";
 import luxuryEcommerce from "../assets/images/luxury-ecommerce.jpg";
 import educationPlatform from "../assets/images/education-platform.jpg";
-import saasPlatform from "../assets/images/saas-platform.jpg";
+import gameStudio from "../assets/images/game-studio.jpg";
 import lifestyleServices from "../assets/images/lifestyle-services.jpg";
 
 interface WebsiteSample {
@@ -45,16 +45,16 @@ const samples: WebsiteSample[] = [
     link: "#",
   },
   {
-    title: "SaaS企业服务",
+    title: "游戏企业服务",
     description:
-      "面向企业的一站式数字化解决方案，提供项目管理、团队协作和数据分析等核心功能",
+      "为大型游戏公司提供百万级定制化解决方案，整合用户分析、精准营销和投资回报等核心服务",
     metrics: {
-      visitors: "企业访问量提升200%",
-      conversion: "免费试用转化率35%",
-      revenue: "年收入增长180%",
+      visitors: "企业客户留存提升200%",
+      conversion: "项目成功率提升85%",
+      revenue: "平均投资回报提升180%",
     },
-    imageUrl: saasPlatform,
-    category: "科技",
+    imageUrl: gameStudio,
+    category: "游戏",
     link: "#",
   },
   {
@@ -81,10 +81,17 @@ export const WebsiteSamples = () => {
           {samples.map((sample, index) => (
             <div
               key={index}
-              id={sample.title === "奢侈品电商平台" ? "luxury-ecommerce" :
-                  sample.title === "SaaS企业服务" ? "saas-platform" :
-                  sample.title === "生活服务平台" ? "lifestyle-services" :
-                  sample.title === "留学顾问服务" ? "brand-marketing" : ""}
+              id={
+                sample.title === "奢侈品电商平台"
+                  ? "luxury-ecommerce"
+                  : sample.title === "游戏运营平台"
+                  ? "game-platform"
+                  : sample.title === "生活服务平台"
+                  ? "lifestyle-services"
+                  : sample.title === "留学顾问服务"
+                  ? "brand-marketing"
+                  : ""
+              }
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow scroll-mt-24"
             >
               <div className="relative">

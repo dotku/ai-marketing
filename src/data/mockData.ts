@@ -7,6 +7,15 @@ export const eBikeData = [
   { month: "Jun", sales: 190, target: 90 },
 ];
 
+export const gameEnterpriseData = [
+  { month: "Jan", players: 50, spend: 120 },
+  { month: "Feb", players: 180, spend: 380 },
+  { month: "Mar", players: 450, spend: 850 },
+  { month: "Apr", players: 850, spend: 1500 },
+  { month: "May", players: 1200, spend: 2200 },
+  { month: "Jun", players: 2000, spend: 3500 },
+];
+
 export const educationServiceData = [
   { month: "Jan", students: 120, inquiries: 350 },
   { month: "Feb", students: 150, inquiries: 420 },
