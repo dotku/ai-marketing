@@ -21,13 +21,17 @@ const gameMarketData = [
 
 export const GameReport: React.FC = () => {
   return (
-    <Card
-      className="mb-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-      style={{
-        border: "1px solid #f0f0f0",
-        backgroundColor: "#fff",
-      }}
-    >
+    <div>
+      <Title level={2} className="mb-6">
+        游戏行业
+      </Title>
+      <Card
+        className="mb-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+        style={{
+          border: "1px solid #f0f0f0",
+          backgroundColor: "#fff",
+        }}
+      >
       <Title level={3}>市场概况</Title>
       <Paragraph>
         全球游戏产业2024年总规模预计达1877亿美元。美国拥有全球最多的大型游戏公司，76家最大游戏公司中有17家在美国。
@@ -122,6 +126,7 @@ export const GameReport: React.FC = () => {
         主流平台和机构都提供中文服务团队，支持多样化合作模式，
         并提供品牌合作等增值服务，助力中国游戏出海。
       </Paragraph>
-    </Card>
+      </Card>
+    </div>
   );
 };

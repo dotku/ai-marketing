@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Typography, Menu } from "antd";
 import "./IndustryReports.css";
-import { GameReport } from "./reports/GameReport";
 import { EcommerceReport } from "./reports/EcommerceReport";
 import { TechReport } from "./reports/TechReport";
+import { EntertainmentReport } from "./reports/entertainment/EntertainmentReport";
 
 const { Title } = Typography;
 
@@ -15,8 +15,8 @@ export const IndustryReports: React.FC = () => {
       key: "1",
       label: (
         <div className="flex items-center py-2 px-1">
-          <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-3" />
-          <span>游戏行业</span>
+          <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mr-3" />
+          <span>娱乐业</span>
         </div>
       ),
     },
@@ -43,7 +43,7 @@ export const IndustryReports: React.FC = () => {
   const renderContent = () => {
     switch (selectedKey) {
       case "1":
-        return <GameReport />;
+        return <EntertainmentReport />;
       case "2":
         return <EcommerceReport />;
       case "3":
@@ -59,14 +59,6 @@ export const IndustryReports: React.FC = () => {
       style={{ backgroundColor: "#f7f9fc" }}
     >
       <div className="max-w-7xl mx-auto">
-        <Title
-          level={2}
-          className="text-center mb-12"
-          style={{ color: "#1890ff" }}
-        >
-          行业报告
-        </Title>
-
         <div className="flex gap-8">
           <div className="w-64 shrink-0">
             <div

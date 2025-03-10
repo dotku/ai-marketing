@@ -62,23 +62,23 @@ export const EcommerceReport: React.FC = () => {
         <Panel header="宠物用品出海分析" key="1">
           <Paragraph>
             宠物用品市场在海外呈现爆发式增长，年增长率达35%。主要驱动因素包括：
-            <ul>
-              <li>海外宠物经济的持续增长</li>
-              <li>中国制造的价格优势</li>
-              <li>产品创新和品质提升</li>
-            </ul>
           </Paragraph>
+          <ul className="list-disc pl-6">
+            <li>海外宠物经济的持续增长</li>
+            <li>中国制造的价格优势</li>
+            <li>产品创新和品质提升</li>
+          </ul>
         </Panel>
 
         <Panel header="电子产品出海趋势" key="2">
           <Paragraph>
             智能电子产品出海市场规模达4500亿美元，年增长28%。主要特点：
-            <ul>
-              <li>智能家电领域快速增长</li>
-              <li>创新科技产品备受青睐</li>
-              <li>品牌建设成效显著</li>
-            </ul>
           </Paragraph>
+          <ul className="list-disc pl-6">
+            <li>智能家电领域快速增长</li>
+            <li>创新科技产品备受青睐</li>
+            <li>品牌建设成效显著</li>
+          </ul>
         </Panel>
       </Collapse>
     </Card>

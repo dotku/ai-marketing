@@ -61,7 +61,7 @@ export const TechReport: React.FC = () => {
       <Collapse defaultActiveKey={["1"]} className="mb-8">
         <Panel header="云服务与硬件市场" key="1">
           <Paragraph>云服务和硬件设备市场呈现强劲增长：</Paragraph>
-          <ul>
+          <ul className="list-disc pl-6">
             <li>云服务市场规模4758亿元，增长19.2%</li>
             <li>IaaS市场规模3121亿元，增长17.1%</li>
             <li>PaaS市场规模750亿元，增长29.5%</li>
@@ -71,7 +71,7 @@ export const TechReport: React.FC = () => {
 
         <Panel header="软件与数据服务" key="2">
           <Paragraph>软件和数据服务市场持续增长：</Paragraph>
-          <ul>
+          <ul className="list-disc pl-6">
             <li>软件服务市场规模10.8万亿元，增长13.2%</li>
             <li>数据服务市场复合增长率24.3%</li>
             <li>物联网云平台市场持续扩大</li>
