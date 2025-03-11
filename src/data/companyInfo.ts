@@ -1,5 +1,5 @@
 const LEGAL_NAME = "深圳市胜方电子科技有限公司";
-const TITLE = "知意亿点";
+const TITLE = "亿点";
 export const companyInfo = {
   name: TITLE,
   legalName: LEGAL_NAME,
